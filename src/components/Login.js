@@ -38,10 +38,11 @@ class Login extends React.Component {
             <div className='loginContainer'>
                 <h2>Log in</h2>
                 <form className='loginForm'>
-                    <h4>Username</h4>
+                    <h4>Email</h4>
                     <input
                         type='text'
-                        name='email'
+                        name="email"
+                        placeholder="email"
                         value={this.state.credentials.email}
                         onChange ={(e) => this.handleChange(e)}
 
@@ -50,7 +51,8 @@ class Login extends React.Component {
                     <h4>Password</h4>
                     <input
                         type='password'
-                        name='password'
+                        name="password"
+                        placeholder="password"
                         value={this.state.credentials.password}
                         onChange ={(e) => this.handleChange(e)}
                     />
